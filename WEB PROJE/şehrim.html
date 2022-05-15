@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Şehrim</title>
         
     <link rel="stylesheet" href="./bootstrap.js">
-        
+    <link rel="stylesheet" href="./slider.js">
     <link rel="stylesheet" href="./bootstrap.css">
     <link rel="stylesheet" href="./bootstrap-grid.css">
-    <link rel="stylesheet" type="text/css" href="./dosyalar.css" />
+    <link rel="stylesheet" type="text/css" href="./şehrim.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,10 +21,62 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
 </head>
 
-<body data-target="#navbar-example">
+<body>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg text-white">
+        <div class="container py-2">
+            
+            <a href="#" class="navbar-brand">MT</a>
+
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-mt" aria-controls="navbar-mt">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar-mt">
+                
+                <ul class="navbar-nav ml-auto">
+                    
+                    <li class="nav-item px-3">
+                        <a href="./anasayfa.html" class="nav-link text-white">Ana Sayfa</a>                
+                    </li>
+                    
+                    <li class="nav-item px-3">
+                        <a href="./cv.html" class="nav-link text-white">Eğitim Kariyerim</a>                
+                    </li>
+
+                    <li class="nav-item px-3">
+                        <a href="./şehrim.html" class="nav-link text-white">Şehrim</a>                
+                    </li>
+                    
+                    <li class="nav-item px-3">
+                        <a href="./takımımız.html" class="nav-link text-white">Takım</a>                
+                    </li>
+                    
+                    <li class="nav-item px-3">
+                        <a href="./iletişim.html" class="nav-link text-white">İletişim</a>                
+                    </li>
+
+                    <li class="nav-item px-3">
+                        <a href="./hakkımda.html" class="nav-link text-white">Hakkımda</a>                
+                    </li>
+
+                    <li class="nav-item pl-3">
+                        <a href="./havadurumu.html" class="nav-link text-white">Hava Durumu</a>                
+                    </li>
+
+                    <li class="nav-item pl-3">
+                        <a href="./login.html" class="nav-link text-white">Login</a>                
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="overlay"></div>
 
     <div id="şehrim" class="container">
 
+        
         <h2>Şehrim</h2>
         
         <p class="lead">
@@ -59,7 +111,7 @@
                             <span class="location">
                                 
                                 <span class="glyphicon glyphicon-map-marker"></span>
-                                Malatya
+                                <a href="https://www.google.com/maps/place/Malatya/@38.3528247,38.1358732,11z/data=!3m1!4b1!4m5!3m4!1s0x407636e4923c4bad:0xa053ec48de5f481b!8m2!3d38.3553627!4d38.3335247" target="_blank">Malatya</a>
                             </span>
 
                             <span class="seperator">|</span>
@@ -144,7 +196,7 @@
                             <span class="location">
                                 
                                 <span class="glyphicon glyphicon-map-marker"></span>
-                                Nemrut Dağı
+                                <a href="https://www.google.com/maps/place/Nemrut+Da%C4%9F%C4%B1/@37.980774,38.7385906,17z/data=!3m1!4b1!4m5!3m4!1s0x4075ff1830234cd9:0xf0918fbc17d0a023!8m2!3d37.980774!4d38.7407793" target="_blank">Nemrut Dağı</a>
                             </span>
 
                             <span class="seperator">|</span>
@@ -179,13 +231,13 @@
                             Torosların devamı olan Beydağlarının çevrelediği Malatya'yı kıvrımlarla bölen akarsular ve dağ eteklerinden çıkan kaynak sularının bolluğu, yörede meyve bahçelerinin ve ova içerisinde yeşil bir örtünün yaygınlaşmasına sebep olmuştur. Malatya'da, turunçgiller ve muz gibi az sayıda meyvenin dışında, hemen hemen bütün meyveler yetişmektedir. Dünyaca ünlü kaysısından kirazına, elmasından armuduna kadar her meyveyi yetiştirmek ve taze taze bulup yemek mümkündür. İşte Malatya'nın bu doğal güzelliği, topraklarının verimliliği ve tarihsel dokusunun yanı sıra, şehre 100 km. mesafedeki Nemrut Dağı'na bağlantısı turizm çekiciliğini arttırmaktadır.
                         </span>  
                         <br>
-                        
+
                         <span class="şehrim-detay">
                             
                             <span class="location">
                                 
                                 <span class="glyphicon glyphicon-map-marker"></span>
-                                Gezilecek Yerler
+                                <a href="https://www.google.com/maps/search/malatya+gezilecek+yerler+haritas%C4%B1/@38.3687155,37.6252349,10z" target="_blank">Gezilecek Yerler</a>
                             </span>
 
                             <span class="seperator">|</span>
@@ -203,17 +255,26 @@
             </div>
 
         </div>
-
-
-
-        
-
-
-
-
-
     </div>
 
+    <div class="sayfa">
+        <div class="sliderKonum">
+            <div class="slider">
+                <a class="img-bir" href="http://www.malatyakultur.com/malatya-tanitim/yeni-cami" target="_blank">
+                    <img src="./images/zyro-image (1).png" alt="resim">
+                </a>
+                <a class="img-iki" href="https://www.kulturportali.gov.tr/turkiye/malatya/gezilecekyer/levent-vadisi" target="_blank">
+                    <img src="./images/zyro-image (2).png" alt="resim">
+                </a>
+                <a class="img-uc" href="https://gezilmesigerekenyerler.com/kudret-havuzu#:~:text=Kudret%20Havuzu%20Genel%20Bilgiler,22%20derecede%20sabit%20olarak%20g%C3%B6zlemlenmi%C5%9Ftir." target="_blank">
+                    <img src="./images/zyro-image (3).jpg" alt="resim"> 
+                </a>
+                <a class="img-dort" href="https://www.kulturportali.gov.tr/turkiye/malatya/gezilecekyer/somuncu-baba-camii-ve-turbesi" target="_blank">
+                    <img src="./images/zyro-image.png" alt="resim"> 
+                </a>
+            </div>
+        </div>
+    </div>
     
 </body>
 </html>
