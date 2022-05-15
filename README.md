@@ -1,4 +1,4 @@
-# Web-Arayuzu-Tasarimi
+# Web-Arayuzu-Tasarimi<hr>
 `- Kendimi ve Yaşadığım Şehri Tanıtan Bir Web Sitesi Tasarımı `
 ## İçerik:
 ### 1. Login Sayfası:
